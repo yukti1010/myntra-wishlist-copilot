@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-[#FBFBF9] overflow-x-hidden overflow-y-auto" lang="en" style="scroll-behavior: smooth;"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed-variant": "#484645", "surface-variant": "#e2e3e1", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#1c1b1a", "surface-container-high": "#e8e8e6", "on-secondary-container": "#fffbff", "surface-bright": "#f9f9f7", "on-surface-variant": "#444748", "secondary-fixed": "#ffd9e0", "error": "#ba1a1a", "on-primary-container": "#858383", "error-container": "#ffdad6", "surface": "#FBFBF9", "surface-dim": "#dadad8", "on-primary-fixed-variant": "#474746", "on-primary-fixed": "#1c1b1b", "on-surface": "#1A1A1A", "secondary-fixed-dim": "#ffb1c2", "primary-fixed-dim": "#c8c6c5", "inverse-on-surface": "#f1f1ef", "on-secondary-fixed": "#3f0018", "tertiary-container": "#1c1b1a", "background": "#FBFBF9", "secondary-container": "#E11B6C", "on-background": "#1A1A1A", "on-secondary-fixed-variant": "#8f0040", "surface-container-low": "#f4f4f2", "inverse-primary": "#c8c6c5", "surface-container": "#eeeeec", "on-error-container": "#93000a", "tertiary-fixed-dim": "#cac6c4", "primary": "#1A1A1A", "tertiary": "#1A1A1A", "tertiary-fixed": "#e6e2df", "outline-variant": "#c4c7c7", "surface-tint": "#5f5e5e", "surface-container-lowest": "#ffffff", "primary-fixed": "#e5e2e1", "inverse-surface": "#2f3130", "on-error": "#ffffff", "secondary": "#E11B6C", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#868382", "outline": "#747878", "surface-container-highest": "#e2e3e1", "primary-container": "#1c1b1b" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-md": "1rem", "space-2xs": "0.25rem", "space-xl": "2rem", "space-3xl": "4rem", "space-2xl": "3rem", "space-sm": "0.75rem", "container-mobile-max": "440px", "space-xs": "0.5rem", "gutter-mobile": "1rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "container-desktop-canvas": "1280px" }, fontFamily: { "headline-md": ["Bodoni Moda"], "display": ["Bodoni Moda"], "headline-lg": ["Bodoni Moda"], "label-sm": ["Outfit"], "display-mobile": ["Bodoni Moda"], "headline-lg-mobile": ["Bodoni Moda"], "body-sm": ["Outfit"], "body-lg": ["Outfit"], "numeric-metric": ["Outfit"], "headline-sm": ["Bodoni Moda"], "label-md": ["Outfit"], "body-md": ["Outfit"] }, fontSize: { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }], "display": ["48px", { "lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-mobile": ["30px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" }], "body-sm": ["14px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "numeric-metric": ["22px", { "lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{min-height:100%;margin:0;padding:0;background-color:#FBFBF9;overflow-x:hidden;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}}::-webkit-scrollbar{display:none;}</style></head><body class="min-h-screen w-full flex justify-center antialiased bg-[#FBFBF9] py-0 md:py-4 overflow-x-hidden overflow-y-auto"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg><div class="relative bg-[#FBFBF9] font-body-md text-body-md text-on-surface flex flex-col shadow-2xl rounded-none md:rounded-2xl border-x md:border border-stone-200 w-full max-w-[390px] min-h-screen overflow-x-hidden" id="mainAppContainer">
+<!-- Top Navigation & Status Bar (Sticky Header) -->
+<header class="sticky top-0 w-full backdrop-blur-md shrink-0 z-30 pt-3 px-4 pb-2.5 border-b border-stone-200 bg-[#FBFBF9]/95">
+<div class="h-5 flex items-center justify-between text-on-surface select-none pb-1">
+<span class="font-semibold text-[14px] tracking-tight">9:41</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] leading-none">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[15px] leading-none">wifi</span>
+<span class="material-symbols-outlined text-[17px] leading-none">battery_full</span>
+</div>
+</div>
+<div class="h-10 flex items-center justify-between mt-1">
+<button aria-label="Back to Wishlist" class="flex items-center gap-1.5 text-on-surface hover:text-secondary active:scale-95 transition-all py-1 -ml-1 cursor-pointer" id="backToWishlistBtn" onclick="navigateBack()">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span class="font-body-md text-[13px] font-bold uppercase tracking-wider">Back to Wishlist</span>
+</button>
+<span class="font-headline-sm text-[14px] font-semibold uppercase tracking-wider text-on-surface">Item Intelligence</span>
+<div class="flex items-center gap-2">
+<button aria-label="Share" class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button aria-label="Bookmark" class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Rich Expanded Scrollable Canvas Content -->
+<main class="flex-1 flex flex-col px-4 pt-3 gap-4 pb-4">
+<!-- Hero Visual Gallery with Try-On Photo -->
+<div class="flex flex-col gap-2">
+<div class="relative w-full h-[380px] rounded-xl overflow-hidden shadow-sm bg-surface-container-low shrink-0">
+<img alt="Editorial mirror selfie of oversized beige linen blazer styling" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1XZkUFrHPyqFecmA96QepiU_euEAm6d-BJ9Enwt1lY6SMLSRt4BBSss-X_DSW_su6bvLEpO4r_lnvdF8m3McJYM6S92iKuYpSlWZJ5613gBGpEoKz0WCoW92SOwy69SIbELnOYGhtkjnYY9kWwzJ1R71kx-ZlqDNjVBJJ91vWxyjCzGSNkaMnbTBzwTk9oqYkLHh_B6QSYc0hR3DRWhzGonDpX79XTEMCgxbVMHzXfT-NXm05hNI1WCaKI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
+<!-- Top Badges -->
+<div class="absolute top-3 inset-x-3 flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-on-surface font-body-md text-[13px] font-semibold tracking-wide shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="">True to Cut • Size M</span>
+</span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-rose-50 text-secondary border border-rose-200 backdrop-blur-md font-body-md text-[13px] font-bold tracking-wide shadow-sm">
+<span class="text-[14px]">🔥</span>
+<span class="">Only 3 Left in M</span>
+</span>
+</div>
+<!-- Photo Count / Live Try-On Indicator Badge -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 bg-black/65 backdrop-blur-md text-white text-[13px] px-3 py-1.5 rounded-full font-medium shadow-sm">
+<span class="text-pink-400">✨</span>
+<span class="">Verified Creator Fit • @sneha_fits (5'4", Size M)</span>
+</div>
+</div>
+</div>
+<!-- Gallery Swipe / Thumbnail Indicators -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-1.5 rounded-full bg-secondary"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
+</div>
+<span class="font-body-md text-[13px] text-on-surface-variant font-medium">1 of 4 verified photos</span>
+</div>
+</div>
+<!-- Header Summary Card + Readiness Gauge -->
+<div class="bg-white p-4 rounded-xl shadow-sm flex items-center justify-between gap-3 border border-stone-200">
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-body-md text-[12px] uppercase tracking-widest text-on-surface-variant font-bold">H&amp;M Edition</span>
+<h1 class="font-headline-lg-mobile text-[22px] text-on-surface tracking-tight font-medium leading-snug pt-0.5">Oversized Linen Blazer</h1>
+<div class="flex items-center gap-2 pt-1.5 flex-wrap">
+<span class="font-numeric-metric text-[22px] text-on-surface font-bold">₹2,499</span>
+<span class="font-body-md text-[14px] text-stone-400 line-through font-normal">₹3,999</span>
+<span class="font-body-md text-[12px] px-2 py-0.5 rounded bg-rose-50 border border-rose-200 text-secondary font-bold">37% OFF</span>
+</div>
+</div>
+<!-- 82% Purchase Readiness Gauge -->
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-[#FBFBF9] border border-stone-200 shrink-0 min-w-[104px]">
+<div class="relative flex items-center justify-center">
+<svg class="w-14 h-14 -rotate-90" viewbox="0 0 36 36">
+<path class="text-stone-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="82, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-numeric-metric text-[16px] font-bold text-on-surface leading-none">82%</span>
+</div>
+</div>
+<span class="font-body-md text-[11px] font-bold uppercase tracking-wider text-on-surface leading-tight mt-1.5">Readiness</span>
+<span class="font-body-md text-[10px] uppercase tracking-wider text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-bold mt-1">High Match</span>
+</div>
+</div>
+<!-- Hero Score Summary Pill -->
+<div class="bg-white px-3.5 py-2.5 rounded-xl border border-stone-200 flex items-center justify-between text-[13px]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">psychology</span>
+<span class="font-medium text-on-surface">Copilot Confidence:</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-bold text-[12px] border border-emerald-200">Very High</span>
+</div>
+<!-- Algorithmic Confidence Breakdown Section -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between px-1">
+<span class="font-headline-sm text-[17px] font-semibold tracking-tight text-on-surface">Confidence Breakdown</span>
+<span class="font-body-md text-[13px] text-secondary font-semibold uppercase tracking-wider">AI Calibrated</span>
+</div>
+<!-- 1. Price Confidence Card -->
+<div class="bg-white p-4 rounded-xl shadow-sm border border-stone-200 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0">
+<span class="text-[17px]">🏷️</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-[15px] font-bold text-on-surface leading-snug">92% Price Confidence</span>
+<span class="font-body-md text-[13px] text-on-surface-variant leading-tight">Within ₹2,700 target budget</span>
+</div>
+</div>
+<span class="font-numeric-metric text-[18px] font-bold text-emerald-700 shrink-0">92%</span>
+</div>
+<!-- Price Trend Trajectory Bar -->
+<div class="pt-2 flex flex-col gap-2 border-t border-stone-100">
+<p class="font-body-md text-[14px] text-on-surface leading-relaxed">
+Current price ₹2,499 is <strong class="font-semibold text-emerald-700">₹201 below</strong> your saved target threshold.
+</p>
+<div class="bg-[#FBFBF9] p-3.5 rounded-xl border border-stone-200 flex flex-col gap-3" id="price-trajectory-section"><div class="flex items-center justify-between gap-2 flex-wrap"><div class="flex flex-col"><span class="text-[14px] font-semibold text-on-surface" id="trajectoryTitle">30-Day Price Trajectory</span><span class="text-[12px] font-bold text-emerald-700 tracking-wide uppercase" id="trajectoryBadge">Steady at Best Value</span></div><div class="flex items-center gap-1 bg-stone-100 p-0.5 rounded-lg border border-stone-200" role="tablist"><button class="px-2.5 py-1 rounded-md text-[13px] font-semibold transition-all bg-[#1a1a1a] text-white shadow-sm" id="rangeBtn-30D" onclick="selectPriceRange('30D'); updateForecastState('30D');" type="button">30D</button><button class="px-2.5 py-1 rounded-md text-[13px] font-semibold transition-all text-on-surface-variant hover:text-on-surface" id="rangeBtn-60D" onclick="selectPriceRange('60D'); updateForecastState('60D');" type="button">60D</button><button class="px-2.5 py-1 rounded-md text-[13px] font-semibold transition-all text-on-surface-variant hover:text-on-surface" id="rangeBtn-90D" onclick="selectPriceRange('90D'); updateForecastState('90D');" type="button">90D</button></div></div><div class="relative w-full pt-1 pb-1"><div class="absolute -top-7 left-1/2 -translate-x-1/2 bg-stone-900 text-white text-[12px] px-2.5 py-0.5 rounded shadow pointer-events-none transition-all duration-150 font-medium whitespace-nowrap opacity-0" id="chartTooltip">₹2,499 • Best Deal</div><svg class="w-full h-24 overflow-visible" id="priceTrajectorySvg" viewbox="0 0 320 80"><defs><lineargradient id="priceGrad" x1="0%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#059669" stop-opacity="0.22"></stop><stop offset="100%" stop-color="#059669" stop-opacity="0.0"></stop></lineargradient></defs><line stroke="#e5e7eb" stroke-dasharray="3 3" stroke-width="1" x1="10" x2="310" y1="70" y2="70"></line><line stroke="#e5e7eb" stroke-dasharray="3 3" stroke-width="1" x1="10" x2="310" y1="40" y2="40"></line><path d="M 15 32 C 90 34, 150 48, 220 50 C 265 52, 290 62, 305 62 L 305 75 L 15 75 Z" fill="url(#priceGrad)" id="chartArea"></path><path d="M 15 32 C 90 34, 150 48, 220 50 C 265 52, 290 62, 305 62" fill="none" id="chartPath" stroke="#059669" stroke-linecap="round" stroke-width="2.5"></path><g id="chartDots"><circle class="cursor-pointer hover:r-5" cx="15" cy="32" fill="#1a1a1a" onmouseenter="showChartTooltip(15, 32, '30D High: ₹3,199')" onmouseleave="hideChartTooltip()" r="4" stroke="#ffffff" stroke-width="2"></circle><circle class="cursor-pointer hover:r-5" cx="220" cy="50" fill="#78716c" onmouseenter="showChartTooltip(220, 50, 'Mid-month: ₹2,699')" onmouseleave="hideChartTooltip()" r="4" stroke="#ffffff" stroke-width="2"></circle><circle class="cursor-pointer ring-2 ring-emerald-300" cx="305" cy="62" fill="#059669" onmouseenter="showChartTooltip(305, 62, 'Now: ₹2,499')" onmouseleave="hideChartTooltip()" r="5.5" stroke="#ffffff" stroke-width="2"></circle></g></svg></div><div class="flex items-center justify-between font-body-md text-[13px] border-t border-stone-100 pt-2" id="priceTrajectoryFooter"><div class="flex flex-col"><span class="text-[11px] uppercase tracking-wider text-on-surface-variant font-medium" id="labelStartKey">30D Ago</span><span class="font-medium text-stone-700" id="valStart">₹3,199</span></div><div class="flex flex-col items-center"><span class="text-[11px] uppercase tracking-wider text-on-surface-variant font-medium">Period Avg</span><span class="font-medium text-stone-700" id="valAvg">₹2,740</span></div><div class="flex flex-col items-end"><span class="text-[11px] uppercase tracking-wider text-emerald-700 font-bold">Current Price</span><span class="font-bold text-on-surface" id="valNow">₹2,499</span></div></div><div class="pt-2.5 border-t border-stone-200 flex flex-col gap-2.5" id="aiForecastContainer"><div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-stone-200"><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-secondary text-[16px]">insights</span><span class="text-[12px] font-bold uppercase tracking-wider text-on-surface">AI Drop Forecast</span></div><span class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200" id="forecastStatusPill"><span class="w-1.5 h-1.5 rounded-full bg-emerald-700"></span>Optimal Buy Window</span></div><div class="p-3 rounded-lg bg-white border border-stone-200 flex flex-col gap-2"><div class="flex items-baseline justify-between"><div class="flex items-center gap-1.5"><span class="text-[14px] font-bold text-on-surface">Drop Likelihood:</span><span class="text-[14px] font-bold text-emerald-700" id="forecastProbability">12% (Very Low)</span></div><span class="text-[12px] font-medium text-on-surface-variant" id="forecastTimeframe">Next 7 Days</span></div><div class="w-full bg-stone-100 h-1.5 rounded-full overflow-hidden flex"><div class="bg-emerald-700 h-full rounded-full transition-all duration-300" id="forecastProgressBar" style="width: 12%;"></div></div><div class="text-[13px] text-on-surface leading-snug pt-0.5" id="forecastFloorDetail"><strong class="font-semibold text-on-surface">Near-Term Floor: ₹2,499</strong> <span class="text-on-surface-variant">(Price locked at recent 30-day baseline).</span></div><div class="flex items-start gap-1.5 p-2 rounded bg-amber-50 border border-amber-200 text-stone-700 text-[12px] leading-relaxed" id="forecastRiskNote"><span class="material-symbols-outlined text-amber-500 text-[15px] shrink-0 mt-0.5">check_circle</span><span class=""><strong class="font-semibold text-on-surface">Stable Trajectory:</strong> Zero planned merchant flash discounts detected over next 7 calendar days.</span></div></div></div><div class="p-3.5 rounded-xl bg-white border border-stone-200 flex items-center justify-between gap-3 transition-all hover:border-stone-300" id="priceDropAlertCard"><div class="flex items-center gap-2.5 min-w-0"><div class="w-8 h-8 rounded-lg bg-pink-50 border border-pink-200 flex items-center justify-center shrink-0 text-secondary"><span class="material-symbols-outlined text-[18px]">notification_add</span></div><div class="flex flex-col"><span class="text-[14px] font-bold text-on-surface leading-tight">Alert me if price drops below ₹2,399</span><span class="text-[12px] text-on-surface-variant leading-snug pt-0.5">Instant push notification &amp; WhatsApp alert when predicted floor is hit</span></div></div><div class="shrink-0 flex items-center"><button aria-checked="true" class="w-11 h-6 flex items-center bg-[#1a1a1a] rounded-full p-1 cursor-pointer transition-colors duration-200" id="floorAlertSwitch" onclick="(function(btn){ const dot = document.getElementById('switchThumb'); const bg = btn; const isChecked = btn.getAttribute('aria-checked') === 'true'; if (isChecked) { btn.setAttribute('aria-checked', 'false'); bg.classList.remove('bg-[#1a1a1a]'); bg.classList.add('bg-stone-300'); dot.classList.remove('translate-x-5'); dot.classList.add('translate-x-0'); } else { btn.setAttribute('aria-checked', 'true'); bg.classList.remove('bg-stone-300'); bg.classList.add('bg-[#1a1a1a]'); dot.classList.remove('translate-x-0'); dot.classList.add('translate-x-5'); const toast = document.getElementById('alertToast'); if (toast) { toast.classList.remove('hidden'); setTimeout(function(){ toast.classList.add('hidden'); }, 2400); } } })(this);" role="switch" type="button"><div class="bg-white w-4 h-4 rounded-full shadow-md transform translate-x-5 transition-transform duration-200" id="switchThumb"></div></button></div></div></div>
+</div>
+</div>
+<!-- 2. Anatomical Fit Confidence Card -->
+<div class="bg-white p-4 rounded-xl shadow-sm border border-stone-200 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0">
+<span class="text-[17px]">📏</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-[15px] font-bold text-on-surface leading-snug">74% Fit Confidence</span>
+<span class="font-body-md text-[13px] text-on-surface-variant leading-tight">Size M calibrated to your measurements</span>
+</div>
+</div>
+<span class="font-numeric-metric text-[18px] font-bold text-on-surface shrink-0">74%</span>
+</div>
+<div class="pt-2 flex flex-col gap-2.5 border-t border-stone-100 font-body-md text-[14px]">
+<p class="text-on-surface leading-relaxed">
+<strong class="font-semibold text-on-surface">184 verified reviews</strong> confirm true-to-size for Size M.
+</p>
+<!-- Anomaly & Specs Pill Row -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-2.5 rounded-lg bg-[#FBFBF9] border border-stone-200">
+<span class="text-[11px] text-on-surface-variant block uppercase font-bold tracking-wider">Return Rate Anomaly</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-bold text-[17px] text-emerald-700">4.2%</span>
+<span class="text-on-surface-variant text-[12px]">(vs 14% avg)</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-[#FBFBF9] border border-stone-200">
+<span class="text-[11px] text-on-surface-variant block uppercase font-bold tracking-wider">Shoulder Drop</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-bold text-[17px] text-on-surface">+1.8 cm</span>
+<span class="text-on-surface-variant text-[12px]">Relaxed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Tactical Drape & Real-World Confidence Card -->
+<div class="bg-white p-4 rounded-xl shadow-sm border border-stone-200 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-pink-50 border border-pink-200 flex items-center justify-center shrink-0">
+<span class="text-[17px]">👗</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-[15px] font-bold text-on-surface leading-snug">88% Tactical Drape Confidence</span>
+<span class="font-body-md text-[13px] text-on-surface-variant leading-tight">63 customer photo reviews analyzed</span>
+</div>
+</div>
+<span class="font-numeric-metric text-[18px] font-bold text-emerald-700 shrink-0">88%</span>
+</div>
+<div class="pt-2 flex flex-col gap-2.5 border-t border-stone-100 font-body-md text-[14px]">
+<p class="text-on-surface leading-relaxed">
+Customer photo analysis confirms fold memory and structural stability across multiple wears.
+</p>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-[#FBFBF9] border border-stone-200">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-amber-500 fill-1">star</span>
+<span class="font-bold text-on-surface text-[14px]">4.8 / 5</span>
+<span class="text-on-surface-variant text-[13px]">Texture Rating</span>
+</div>
+<span class="text-emerald-700 font-bold text-[13px] bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Wrinkle Recovery A+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Customer Review Quotes & Creator Notes -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<span class="font-headline-sm text-[17px] font-semibold tracking-tight text-on-surface">Customer &amp; Creator Notes</span>
+<span class="font-body-md text-[13px] text-on-surface-variant font-medium">Verified Source</span>
+</div>
+<!-- Quote 1 -->
+<div class="bg-white p-4 rounded-xl shadow-sm border border-stone-200 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-rose-100 text-secondary flex items-center justify-center font-bold text-[12px] border border-rose-200">S</div>
+<span class="font-body-md text-[14px] font-bold text-on-surface">@sneha_fits</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">(5'4", Size M)</span>
+</div>
+<span class="inline-flex items-center gap-0.5 text-secondary text-[12px] font-bold">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+Verified Stylist
+</span>
+</div>
+<p class="font-body-md text-[14px] text-on-surface leading-relaxed italic">
+"Shoulder seams sit perfectly without slouching or sagging. Fabric has substantial linen weight without being see-through."
+</p>
+</div>
+<!-- Quote 2 -->
+<div class="bg-white p-4 rounded-xl shadow-sm border border-stone-200 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-stone-100 text-stone-700 flex items-center justify-center border border-stone-200">
+<span class="material-symbols-outlined text-[16px]">person</span>
+</div>
+<span class="font-body-md text-[14px] font-bold text-on-surface">Verified Buyer</span>
+</div>
+<span class="font-body-md text-[12px] text-on-surface-variant font-medium">3 days ago</span>
+</div>
+<p class="font-body-md text-[14px] text-on-surface leading-relaxed italic">
+"Washed once cold, zero shrinkage in length or sleeve cuff."
+</p>
+</div>
+</div>
+<!-- Why Copilot Recommends It -->
+<div class="bg-white p-4 rounded-xl shadow-sm border border-secondary/30 flex flex-col gap-3" id="copilot-recommendations-section">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-rose-50 flex items-center justify-center text-secondary border border-rose-200">
+<span class="material-symbols-outlined text-[17px]">recommend</span>
+</div>
+<h2 class="font-headline-sm text-[16px] font-semibold tracking-tight text-on-surface">Why Copilot Recommends It</h2>
+</div>
+<ul class="flex flex-col gap-2.5 font-body-md text-[14px] text-on-surface pt-1">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="leading-relaxed">Meets your neutral workwear palette criteria without crossing your ₹2,700 threshold.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="leading-relaxed">Zero tight-shoulder reports among 180+ buyers matching your silhouette.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="leading-relaxed"><strong class="font-bold text-secondary">Inventory Velocity Alert:</strong> Size M selling 3x faster than average across regional hubs.</span>
+</li>
+</ul>
+</div>
+</main>
+<!-- Bottom Fixed Container: Sticky Action Bar & Persistent iOS Indicator -->
+<footer class="sticky bottom-0 w-full bg-[#FBFBF9]/95 backdrop-blur-md border-t border-stone-200 shrink-0 z-30 px-4 pt-3 pb-2 shadow-lg">
+<!-- Action Row -->
+<div class="flex items-center gap-3">
+<div class="flex flex-col shrink-0 min-w-0 pr-1">
+<span class="font-body-md text-[12px] uppercase font-bold text-on-surface-variant leading-none">Total</span>
+<span class="font-numeric-metric text-[20px] font-bold text-on-surface leading-tight mt-0.5">₹2,499</span>
+</div>
+<button aria-label="Set Target Alert" class="h-12 w-12 rounded-xl bg-white flex items-center justify-center text-on-surface hover:bg-stone-50 active:scale-95 transition-all shrink-0 border border-stone-300 cursor-pointer shadow-sm" id="alertBtn">
+<span class="material-symbols-outlined text-[22px]" id="alertIcon">notifications</span>
+</button>
+<button class="flex-1 h-12 px-4 rounded-xl bg-[#E11B6C] text-white font-body-md text-[14px] uppercase tracking-wider font-bold shadow-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all hover:bg-[#c9155f] cursor-pointer" id="ctaBtn" onclick="navigateToConfirmation()">
+<span class="">VIEW ON MYNTRA</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Alert Toast Notification (Subtle confirmation) -->
+<div class="hidden mt-2 p-2.5 rounded-lg bg-stone-900 text-white text-[13px] flex items-center justify-between transition-all" id="alertToast">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-pink-400 text-[16px]">notifications_active</span>
+<span class="">Target price &amp; inventory alert activated</span>
+</div>
+<span class="text-[11px] text-stone-300 uppercase font-semibold">Active</span>
+</div>
+<!-- iOS Persistent Home Indicator Bar -->
+<div class="w-full flex justify-center pt-2.5 pb-0.5">
+<div class="w-32 h-1 bg-stone-400 rounded-full"></div>
+</div>
+</footer>
+</div>
+<script>
+  // Interactive Navigation Back to Screen 3
+  function navigateBack() {
+    const btn = document.getElementById('backToWishlistBtn');
+    if (btn) btn.classList.add('opacity-70');
+
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ action: 'navigate', target: '{{DATA:SCREEN:SCREEN_67}}' }, '*');
+    }
+
+    setTimeout(() => {
+      window.location.href = "{{DATA:SCREEN:SCREEN_67}}";
+    }, 120);
+  }
+
+  // Interactive Forward CTA to Screen 5
+  function navigateToConfirmation() {
+    const ctaBtn = document.getElementById('ctaBtn');
+    if (ctaBtn) {
+      ctaBtn.classList.add('scale-95', 'opacity-90');
+      ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span>Processing...</span>';
+    }
+
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ action: 'navigate', target: '{{DATA:SCREEN:SCREEN_2}}' }, '*');
+    }
+
+    setTimeout(() => {
+      window.location.href = "{{DATA:SCREEN:SCREEN_2}}";
+    }, 250);
+  }
+
+  // Bell Alert Toggle
+  const alertBtn = document.getElementById('alertBtn');
+  const alertIcon = document.getElementById('alertIcon');
+  const alertToast = document.getElementById('alertToast');
+  let isAlertActive = false;
+
+  if (alertBtn) {
+    alertBtn.addEventListener('click', () => {
+      isAlertActive = !isAlertActive;
+      alertBtn.classList.add('scale-90');
+      setTimeout(() => alertBtn.classList.remove('scale-90'), 150);
+
+      if (isAlertActive) {
+        alertIcon.innerText = 'notifications_active';
+        alertBtn.classList.add('bg-[#E11B6C]', 'text-white', 'border-[#E11B6C]');
+        alertBtn.classList.remove('bg-white', 'text-on-surface', 'border-stone-300');
+        if (alertToast) {
+          alertToast.classList.remove('hidden');
+          setTimeout(() => {
+            alertToast.classList.add('hidden');
+          }, 2400);
+        }
+      } else {
+        alertIcon.innerText = 'notifications';
+        alertBtn.classList.remove('bg-[#E11B6C]', 'text-white', 'border-[#E11B6C]');
+        alertBtn.classList.add('bg-white', 'text-on-surface', 'border-stone-300');
+        if (alertToast) {
+          alertToast.classList.add('hidden');
+        }
+      }
+    });
+  }
+</script>
+<script>
+window.updateForecastState = function(range) {
+  const fProb = document.getElementById('forecastProbability');
+  const fTime = document.getElementById('forecastTimeframe');
+  const fBar = document.getElementById('forecastProgressBar');
+  const fDetail = document.getElementById('forecastFloorDetail');
+  const fPill = document.getElementById('forecastStatusPill');
+  const fNote = document.getElementById('forecastRiskNote');
+  if (!fProb) return;
+  if (range === '30D') {
+    fProb.textContent = '12% (Very Low)';
+    fProb.className = 'text-[14px] font-bold text-emerald-700';
+    fTime.textContent = 'Next 7 Days';
+    if (fBar) fBar.style.width = '12%';
+    if (fPill) fPill.innerHTML = '<span class=\'w-1.5 h-1.5 rounded-full bg-emerald-700\'></span>Optimal Buy Window';
+    if (fDetail) fDetail.innerHTML = '<strong class=\'font-semibold text-on-surface\'>Near-Term Floor: ₹2,499</strong> <span class=\'text-on-surface-variant\'>(Price locked at recent 30-day baseline).</span>';
+    if (fNote) fNote.innerHTML = '<span class=\'material-symbols-outlined text-amber-500 text-[15px] shrink-0 mt-0.5\'>check_circle</span><span><strong class=\'font-semibold text-on-surface\'>Stable Trajectory:</strong> Zero planned merchant flash discounts detected over next 7 calendar days.</span>';
+  } else if (range === '90D') {
+    fProb.textContent = '22% (Moderate)';
+    fProb.className = 'text-[14px] font-bold text-on-surface';
+    fTime.textContent = 'Seasonal Horizon';
+    if (fBar) fBar.style.width = '22%';
+    if (fPill) fPill.innerHTML = '<span class=\'w-1.5 h-1.5 rounded-full bg-stone-700\'></span>Historical Bottom';
+    if (fDetail) fDetail.innerHTML = '<strong class=\'font-semibold text-on-surface\'>Macro Plateau: ₹2,499</strong> <span class=\'text-on-surface-variant\'>(37% net discount established from ₹3,999 launch).</span>';
+    if (fNote) fNote.innerHTML = '<span class=\'material-symbols-outlined text-amber-500 text-[15px] shrink-0 mt-0.5\'>warning</span><span><strong class=\'font-semibold text-on-surface\'>Inventory Alert:</strong> Remaining regional units for Size M are under 8 units; restock not scheduled.</span>';
+  } else {
+    fProb.textContent = '18% (Low)';
+    fProb.className = 'text-[14px] font-bold text-emerald-700';
+    fTime.textContent = 'Next 14 Days';
+    if (fBar) fBar.style.width = '18%';
+    if (fPill) fPill.innerHTML = '<span class=\'w-1.5 h-1.5 rounded-full bg-emerald-700\'></span>Optimal Buy Window';
+    if (fDetail) fDetail.innerHTML = '<strong class=\'font-semibold text-on-surface\'>Predicted Floor: ₹2,399</strong> <span class=\'text-on-surface-variant\'>(Max ₹100 potential drop vs ₹2,499 now).</span>';
+    if (fNote) fNote.innerHTML = '<span class=\'material-symbols-outlined text-amber-500 text-[15px] shrink-0 mt-0.5\'>warning</span><span><strong class=\'font-semibold text-on-surface\'>Stockout Risk Alert:</strong> Size M selling 3x faster. Risk of missing size outweighs predicted ₹100 marginal variance.&lt;/span>';
+  }
+};
+
+const trajectoryData = {
+  '30D': {
+    title: '30-Day Price Trajectory',
+    badge: 'Steady at Best Value',
+    path: 'M 15 32 C 90 34, 150 48, 220 50 C 265 52, 290 62, 305 62',
+    area: 'M 15 32 C 90 34, 150 48, 220 50 C 265 52, 290 62, 305 62 L 305 75 L 15 75 Z',
+    dots: [
+      { cx: 15, cy: 32, label: '30D High: ₹3,199', fill: '#1a1a1a' },
+      { cx: 220, cy: 50, label: 'Mid-month: ₹2,699', fill: '#78716c' },
+      { cx: 305, cy: 62, label: 'Now: ₹2,499', fill: '#059669' }
+    ],
+    startLabel: '30D Ago',
+    startVal: '₹3,199',
+    avgVal: '₹2,740',
+    nowVal: '₹2,499'
+  },
+  '60D': {
+    title: '60-Day Price Trajectory',
+    badge: 'Lowest Price in 60 Days',
+    path: 'M 15 18 C 80 20, 120 42, 175 42 C 225 42, 260 62, 305 62',
+    area: 'M 15 18 C 80 20, 120 42, 175 42 C 225 42, 260 62, 305 62 L 305 75 L 15 75 Z',
+    dots: [
+      { cx: 15, cy: 18, label: 'Launch: ₹3,999', fill: '#1a1a1a' },
+      { cx: 175, cy: 42, label: 'Average: ₹3,100', fill: '#78716c' },
+      { cx: 305, cy: 62, label: 'Now: ₹2,499 (Lowest)', fill: '#059669' }
+    ],
+    startLabel: 'Launch',
+    startVal: '₹3,999',
+    avgVal: '₹3,100',
+    nowVal: '₹2,499'
+  },
+  '90D': {
+    title: '90-Day Price Trajectory',
+    badge: 'All-Time Low Recorded',
+    path: 'M 15 14 C 70 14, 110 30, 160 30 C 210 32, 260 55, 305 62',
+    area: 'M 15 14 C 70 14, 110 30, 160 30 C 210 32, 260 55, 305 62 L 305 75 L 15 75 Z',
+    dots: [
+      { cx: 15, cy: 14, label: 'Original MRP: ₹4,499', fill: '#1a1a1a' },
+      { cx: 160, cy: 30, label: 'Season Promo: ₹3,499', fill: '#78716c' },
+      { cx: 305, cy: 62, label: 'Current: ₹2,499', fill: '#059669' }
+    ],
+    startLabel: '90D Peak',
+    startVal: '₹4,499',
+    avgVal: '₹3,380',
+    nowVal: '₹2,499'
+  }
+};
+
+function selectPriceRange(range) {
+  ['30D', '60D', '90D'].forEach(r => {
+    const btn = document.getElementById('rangeBtn-' + r);
+    if (btn) {
+      if (r === range) {
+        btn.className = 'px-2.5 py-1 rounded-md text-[13px] font-semibold transition-all bg-[#1a1a1a] text-white shadow-sm';
+      } else {
+        btn.className = 'px-2.5 py-1 rounded-md text-[13px] font-semibold transition-all text-on-surface-variant hover:text-on-surface';
+      }
+    }
+  });
+
+  const d = trajectoryData[range];
+  if (!d) return;
+
+  const titleEl = document.getElementById('trajectoryTitle');
+  const badgeEl = document.getElementById('trajectoryBadge');
+  const pathEl = document.getElementById('chartPath');
+  const areaEl = document.getElementById('chartArea');
+  const dotsEl = document.getElementById('chartDots');
+  const startKeyEl = document.getElementById('labelStartKey');
+  const startValEl = document.getElementById('valStart');
+  const avgValEl = document.getElementById('valAvg');
+  const nowValEl = document.getElementById('valNow');
+
+  if (titleEl) titleEl.textContent = d.title;
+  if (badgeEl) badgeEl.textContent = d.badge;
+  if (pathEl) pathEl.setAttribute('d', d.path);
+  if (areaEl) areaEl.setAttribute('d', d.area);
+  if (startKeyEl) startKeyEl.textContent = d.startLabel;
+  if (startValEl) startValEl.textContent = d.startVal;
+  if (avgValEl) avgValEl.textContent = d.avgVal;
+  if (nowValEl) nowValEl.textContent = d.nowVal;
+
+  if (dotsEl) {
+    dotsEl.innerHTML = d.dots.map(dot => `
+      <circle cx="${dot.cx}" cy="${dot.cy}" r="${dot.cx === 305 ? 5.5 : 4}" fill="${dot.fill}" stroke="#ffffff" stroke-width="2" class="cursor-pointer" onmouseenter="showChartTooltip(${dot.cx}, ${dot.cy}, '${dot.label}')" onmouseleave="hideChartTooltip()"></circle>
+    `).join('');
+  }
+}
+
+function showChartTooltip(cx, cy, text) {
+  const tip = document.getElementById('chartTooltip');
+  if (!tip) return;
+  tip.textContent = text;
+  const percent = (cx / 320) * 100;
+  tip.style.left = percent + '%';
+  tip.style.opacity = '1';
+}
+
+function hideChartTooltip() {
+  const tip = document.getElementById('chartTooltip');
+  if (tip) tip.style.opacity = '0';
+}
+
+// Guarantee start at the very top naturally
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+  document.body.scrollTop = 0;
+  if (document.documentElement) document.documentElement.scrollTop = 0;
+});
+</script>
+</body></html>

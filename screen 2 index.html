@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed-variant": "#484645", "surface-variant": "#e2e3e1", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#1c1b1a", "surface-container-high": "#e8e8e6", "on-secondary-container": "#fffbff", "surface-bright": "#f9f9f7", "on-surface-variant": "#444748", "secondary-fixed": "#ffd9e0", "error": "#ba1a1a", "on-primary-container": "#858383", "error-container": "#ffdad6", "surface": "#f9f9f7", "surface-dim": "#dadad8", "on-primary-fixed-variant": "#474746", "on-primary-fixed": "#1c1b1b", "on-surface": "#1a1c1b", "secondary-fixed-dim": "#ffb1c2", "primary-fixed-dim": "#c8c6c5", "inverse-on-surface": "#f1f1ef", "on-secondary-fixed": "#3f0018", "tertiary-container": "#1c1b1a", "background": "#f9f9f7", "secondary-container": "#e01a6b", "on-background": "#1a1c1b", "on-secondary-fixed-variant": "#8f0040", "surface-container-low": "#f4f4f2", "inverse-primary": "#c8c6c5", "surface-container": "#eeeeec", "on-error-container": "#93000a", "tertiary-fixed-dim": "#cac6c4", "primary": "#000000", "tertiary": "#000000", "tertiary-fixed": "#e6e2df", "outline-variant": "#c4c7c7", "surface-tint": "#5f5e5e", "surface-container-lowest": "#ffffff", "primary-fixed": "#e5e2e1", "inverse-surface": "#2f3130", "on-error": "#ffffff", "secondary": "#b70054", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#868382", "outline": "#747878", "surface-container-highest": "#e2e3e1", "primary-container": "#1c1b1b" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-md": "1rem", "space-2xs": "0.25rem", "space-xl": "2rem", "space-3xl": "4rem", "space-2xl": "3rem", "space-sm": "0.75rem", "container-mobile-max": "440px", "space-xs": "0.5rem", "gutter-mobile": "1rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "container-desktop-canvas": "1280px" }, fontFamily: { "headline-md": ["Bodoni Moda"], "display": ["Bodoni Moda"], "headline-lg": ["Bodoni Moda"], "label-sm": ["Outfit"], "display-mobile": ["Bodoni Moda"], "headline-lg-mobile": ["Bodoni Moda"], "body-sm": ["Outfit"], "body-lg": ["Outfit"], "numeric-metric": ["Outfit"], "headline-sm": ["Bodoni Moda"], "label-md": ["Outfit"], "body-md": ["Outfit"] } } } };</script><style>
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  #app-root {
+    width: 390px;
+    height: 844px;
+    max-height: 844px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #f9f9f7;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  ::-webkit-scrollbar { display: none; }
+</style></head><body class="bg-[#e5e5e5]">
+<div id="app-root">
+<!-- TOP SECTION: Status bar & Header -->
+<div class="shrink-0 pt-2 px-4 bg-surface/95 z-20">
+<!-- iOS Status Bar -->
+<div class="h-5 flex items-center justify-between text-on-surface select-none px-1">
+<span class="font-semibold text-[14px] tracking-tight">9:41</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] leading-none">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[15px] leading-none">wifi</span>
+<span class="material-symbols-outlined text-[17px] leading-none">battery_full</span>
+</div>
+</div>
+<!-- Header bar with Back Arrow, Title, Step -->
+<div class="h-11 flex items-center justify-between border-b border-surface-container-high/60">
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-full flex items-center justify-center -ml-1 text-on-surface active:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<span class="font-headline-sm text-[16px] text-on-surface tracking-tight uppercase font-medium">Import Wishlist</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span class="font-label-md text-[14px] text-on-surface uppercase tracking-wider font-semibold">Step 2 of 5</span>
+</div>
+</div>
+<!-- Title & Brief Subtitle -->
+<div class="pt-2.5 pb-1">
+<h1 class="font-headline-lg-mobile text-[20px] leading-tight text-on-surface font-semibold">Let's look at your wishlist.</h1>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-tight mt-0.5">Sync saved items for instant fit confidence and price drops.</p>
+</div>
+</div>
+<!-- MIDDLE CARDS CONTENT -->
+<div class="flex-1 px-4 py-1.5 flex flex-col justify-between overflow-hidden">
+<!-- Card 1: Try Demo Wishlist -->
+<div class="relative flex flex-col p-3 rounded-xl bg-surface-container-lowest shadow-sm border border-secondary/20 overflow-hidden" id="card-demo">
+<div class="absolute top-0 left-0 right-0 h-[3px] bg-secondary"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-[14px] uppercase tracking-wider font-bold">Recommended</span>
+<span class="font-label-md text-[14px] text-secondary flex items-center gap-0.5 font-semibold"><span class="material-symbols-outlined text-[15px]">auto_awesome</span> Instant</span>
+</div>
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[15px]">collections_bookmark</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-1">
+<h2 class="font-headline-sm text-[16px] text-on-surface font-semibold">Try Demo Wishlist</h2>
+<span class="text-[14px] text-on-surface-variant">6 curated items</span>
+</div>
+<!-- Compact Thumbnails -->
+<div class="flex items-center gap-2 mt-2">
+<div class="relative w-14 h-16 rounded-lg overflow-hidden bg-surface-container shrink-0 shadow-sm border border-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Chic elegant woman in a tailored neutral linen blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcV7bntjuKSO46sbLAq71UhZg3MmgrLl6l4uNyeLkzJqkZthW9a8b4bio8NXv5jED8XDnOxNrl6xmKoYbg4LIshdDhBYjMjleST73_noMuI1ei6wxcEY6C0sxonzZjGDu06tHIDFR8x6yk9pqmdo2CrPEY7Y_jPqwubHleYostn1qPY1CrAuS9VPKk84f-Uq0VZuxGipnw3FvamKXV3xV3AJRk-v6HhD6bnOY3CF7kU5W0IrRjzm1zqw">
+<div class="absolute bottom-0.5 right-0.5 bg-surface-container-lowest/90 px-1 rounded text-[14px] font-bold text-on-surface leading-none">94%</div>
+</div>
+<div class="relative w-14 h-16 rounded-lg overflow-hidden bg-surface-container shrink-0 shadow-sm border border-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Stylish woman wearing high-waisted denim jeans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtgqz_nh1muwX0Knpd8jiXezbLWDuGTTT9pXZvWs2vXle7DuCWPRsTbKcFhU2y76ViBR_Hq-2oQ1eF_DPanT9v2mBsOYmns5ENGJVPI17LOWRl2yIz33VS-YfX2APgN3r5sSaNDtg5eIDfhYcv0UocrWwM2tTvkkoOQlRVJ3viIdM-6nL-cLU4g3BY8t2tH9OhKSCcw7_i54EvjVSSO3X1ulefrnNLfZgJ5YaTVUXW4iw-M1tyaep1fg">
+<div class="absolute bottom-0.5 right-0.5 bg-surface-container-lowest/90 px-1 rounded text-[14px] font-bold text-secondary leading-none">62%</div>
+</div>
+<div class="relative w-14 h-16 rounded-lg overflow-hidden bg-surface-container shrink-0 shadow-sm border border-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Sophisticated woman wearing emerald green silk slip dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRs_bwVX9b6FzICmcB5IKahLTvkGriJkI1W82LJjLggGMUNg8H3Kdzt1WDamylJXJWXTYGF4xFisy5cbS_mkTosFlvBwotOsNZEfDJoxMq9vT3dmuT4JTZ2_srg-nkYxmnGq5KDJrIMJb15_JNIis3amITRAP-NuoQszIuh13F8G9Vk95LzBQjvPcnh78S7YDpvN0j8H_X9yjrV6opueaP7VocgzaX_XuFJdRj5vZE3vW5xxHUuYbvVg">
+<div class="absolute bottom-0.5 right-0.5 bg-surface-container-lowest/90 px-1 rounded text-[14px] font-bold text-on-surface leading-none">88%</div>
+</div>
+<div class="w-14 h-16 rounded-lg bg-surface-container-high flex flex-col items-center justify-center shrink-0 border border-outline-variant/40">
+<span class="text-[14px] leading-tight text-on-surface font-bold">+3</span>
+<span class="text-[14px] uppercase text-on-surface-variant leading-none">More</span>
+</div>
+</div>
+<!-- CTA Button -->
+<button class="w-full h-10 mt-2.5 rounded-lg bg-primary text-on-primary text-[14px] uppercase tracking-wider font-semibold flex items-center justify-center gap-1.5 active:scale-[0.99] transition-transform shadow-sm" type="button">
+<span>LOAD 6 DEMO ITEMS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2: Paste Product Links -->
+<div class="flex flex-col p-3 rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/50">
+<div class="flex items-center justify-between mb-1.5">
+<div>
+<h2 class="font-headline-sm text-[16px] text-on-surface font-semibold leading-tight">Paste Product Links</h2>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-tight mt-0.5">Add one or multiple Myntra URLs</p>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[15px]">link</span>
+</div>
+</div>
+<div class="relative flex items-center mt-1">
+<div class="absolute left-2.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">content_paste</span>
+</div>
+<input class="w-full h-10 pl-8 pr-16 bg-surface-container-low rounded-lg text-[14px] text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest border border-outline-variant/40" id="url-input" placeholder="https://myntra.com/..." type="text">
+<button class="absolute right-1 px-3 py-1 rounded bg-surface-container-high text-on-surface text-[14px] font-bold active:scale-95 transition-transform" onclick="handlePaste()" type="button">Paste</button>
+</div>
+</div>
+<!-- Card 3: Upload Wishlist Screenshot -->
+<div class="flex flex-col p-3 rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/50">
+<div class="flex items-center justify-between mb-1.5">
+<div>
+<h2 class="font-headline-sm text-[16px] text-on-surface font-semibold leading-tight">Upload Wishlist Screenshot</h2>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-tight mt-0.5">Computer vision auto-extracts SKUs &amp; sizes</p>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[15px]">document_scanner</span>
+</div>
+</div>
+<label class="flex items-center justify-center gap-2.5 h-12 px-3 rounded-lg bg-surface-container-low border border-dashed border-outline-variant text-center cursor-pointer hover:bg-surface-container active:scale-[0.99] transition-all">
+<span class="material-symbols-outlined text-secondary text-[20px]">cloud_upload</span>
+<span class="text-[14px] font-semibold text-on-surface">Upload Myntra screenshot (PNG, JPG)</span>
+<input accept="image/*" class="hidden" onchange="handleFileUpload(event)" type="file">
+</label>
+</div>
+<!-- Security badge -->
+<div class="flex items-center justify-center gap-1.5 py-0.5 text-center">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">lock</span>
+<span class="text-[14px] text-on-surface-variant font-medium">Encrypted zero-tracking vault • Fit intelligence only</span>
+</div>
+</div>
+<!-- BOTTOM 5-TAB BAR -->
+<nav class="shrink-0 h-14 bg-surface/95 backdrop-blur-xl border-t border-surface-container-high px-2 flex items-center justify-around z-20">
+<a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="home" href="#">
+<span class="material-symbols-outlined text-[20px]">home</span>
+<span class="text-[14px] leading-tight">Home</span>
+</a>
+<a aria-current="page" class="flex flex-col items-center justify-center w-14 h-full text-primary font-bold" data-path="wishlist" href="#">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+<span class="text-[14px] leading-tight">Wishlist</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-full text-secondary active:scale-95" data-path="copilot-ai" href="#">
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-secondary">auto_awesome</span>
+</div>
+<span class="text-[14px] text-secondary font-bold leading-tight mt-0.5">Copilot</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="bag" href="#">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="text-[14px] leading-tight">Bag</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="profile" href="#">
+<span class="material-symbols-outlined text-[20px]">person_outline</span>
+<span class="text-[14px] leading-tight">Profile</span>
+</a>
+</nav>
+</div>
+<script>
+  function handlePaste() {
+    if (navigator.clipboard && navigator.clipboard.readText) {
+      navigator.clipboard.readText().then(text => {
+        const input = document.getElementById('url-input');
+        if (input && text) {
+          input.value = text;
+        }
+      }).catch(() => {
+        const input = document.getElementById('url-input');
+        if (input) input.value = 'https://www.myntra.com/blazers/neutral-atelier-suit';
+      });
+    } else {
+      const input = document.getElementById('url-input');
+      if (input) input.value = 'https://www.myntra.com/blazers/neutral-atelier-suit';
+    }
+  }
+
+  function handleFileUpload(event) {
+    const file = event.target.files && event.target.files[0];
+    if (file) {
+      alert('Scanning ' + file.name + ' for product catalog metadata...');
+    }
+  }
+</script>
+</body></html>

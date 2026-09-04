@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=390, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed-variant": "#484645", "surface-variant": "#e2e3e1", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#1c1b1a", "surface-container-high": "#e8e8e6", "on-secondary-container": "#fffbff", "surface-bright": "#fbfbf9", "on-surface-variant": "#5a5d5e", "secondary-fixed": "#ffd9e0", "error": "#ba1a1a", "on-primary-container": "#858383", "error-container": "#ffdad6", "surface": "#fbfbf9", "surface-dim": "#dadad8", "on-primary-fixed-variant": "#474746", "on-primary-fixed": "#1c1b1b", "on-surface": "#1a1a1a", "secondary-fixed-dim": "#ffb1c2", "primary-fixed-dim": "#c8c6c5", "inverse-on-surface": "#f1f1ef", "on-secondary-fixed": "#3f0018", "tertiary-container": "#1c1b1a", "background": "#fbfbf9", "secondary-container": "#e11b6c", "on-background": "#1a1a1a", "on-secondary-fixed-variant": "#8f0040", "surface-container-low": "#f6f6f4", "inverse-primary": "#c8c6c5", "surface-container": "#eeeeec", "on-error-container": "#93000a", "tertiary-fixed-dim": "#cac6c4", "primary": "#1a1a1a", "tertiary": "#1a1a1a", "tertiary-fixed": "#e6e2df", "outline-variant": "#c4c7c7", "surface-tint": "#5f5e5e", "surface-container-lowest": "#ffffff", "primary-fixed": "#e5e2e1", "inverse-surface": "#2f3130", "on-error": "#ffffff", "secondary": "#e11b6c", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#868382", "outline": "#747878", "surface-container-highest": "#e2e3e1", "primary-container": "#1c1b1b" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.375rem", "xl": "0.75rem", "full": "9999px" }, fontFamily: { "headline-md": ["Bodoni Moda", "serif"], "display": ["Bodoni Moda", "serif"], "headline-lg": ["Bodoni Moda", "serif"], "label-sm": ["Outfit", "sans-serif"], "display-mobile": ["Bodoni Moda", "serif"], "headline-lg-mobile": ["Bodoni Moda", "serif"], "body-sm": ["Outfit", "sans-serif"], "body-lg": ["Outfit", "sans-serif"], "numeric-metric": ["Outfit", "sans-serif"], "headline-sm": ["Bodoni Moda", "serif"], "label-md": ["Outfit", "sans-serif"], "body-md": ["Outfit", "sans-serif"] } } } };</script><style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style></head><body class="font-body-md text-[14px] text-[#1a1a1a] antialiased flex justify-center">
+<!-- Artboard Container: 390px, min-height ~1350px, scrollable vertical feed -->
+<div class="relative w-[390px] min-h-[1350px] bg-[#fbfbf9] flex flex-col shadow-2xl pb-24">
+<!-- Sticky Top Bar & App Header with subtle backdrop blur -->
+<header class="sticky top-0 z-30 bg-[#fbfbf9]/90 backdrop-blur-md border-b border-surface-container-high/70 shrink-0">
+<!-- iOS Status Bar -->
+<div class="h-10 px-4 pt-2.5 flex items-center justify-between text-[#1a1a1a]">
+<span class="font-body-md text-[14px] font-semibold tracking-tight">9:41</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] leading-none">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[16px] leading-none">wifi</span>
+<span class="material-symbols-outlined text-[18px] leading-none">battery_full</span>
+</div>
+</div>
+<!-- Copilot App Header -->
+<div class="h-13 px-4 pb-2.5 pt-1 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-[#e11b6c] flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-white text-[16px]">auto_awesome</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-[16px] text-[#1a1a1a] tracking-tight uppercase font-semibold">WISHLIST COPILOT</span>
+<span class="text-[#5a5d5e] text-[14px] font-normal">• Connected to Myntra</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#1a1a1a] text-[18px]">person</span>
+</div>
+</div>
+</header>
+<!-- Main Scrollable Feed Content -->
+<main class="flex-1 flex flex-col px-4 pt-3.5 space-y-4">
+<!-- Title & Item Count Header -->
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg-mobile text-[22px] leading-tight text-[#1a1a1a] font-serif">Your wishlist, decoded.</h1>
+</div>
+<span class="font-body-md text-[14px] text-[#1a1a1a] bg-surface-container-high px-3 py-0.5 rounded-full font-semibold">6 items</span>
+</div>
+<!-- Top 3 Metric Summary Cards -->
+<div class="grid grid-cols-3 gap-2">
+<div class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-surface-container-low border border-emerald-100 shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span class="font-body-md text-[14px] font-bold text-emerald-800 leading-none">2 Ready</span>
+</div>
+<span class="font-body-md text-[14px] text-[#5a5d5e] font-medium mt-1 leading-none">to Buy</span>
+</div>
+<div class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-surface-container-low border border-amber-100 shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-body-md text-[14px] font-bold text-amber-800 leading-none">2 Price</span>
+</div>
+<span class="font-body-md text-[14px] text-[#5a5d5e] font-medium mt-1 leading-none">Blockers</span>
+</div>
+<div class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-surface-container-low border border-rose-100 shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-rose-600"></span>
+<span class="font-body-md text-[14px] font-bold text-rose-800 leading-none">2 Fit</span>
+</div>
+<span class="font-body-md text-[14px] text-[#5a5d5e] font-medium mt-1 leading-none">Doubts</span>
+</div>
+</div>
+<!-- AI Diagnostic Alert Banner -->
+<div class="rounded-xl bg-[#1c1b1b] text-white px-3.5 py-3 shadow-sm flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#e11b6c] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white text-[18px]">auto_awesome</span>
+</div>
+<p class="font-body-md text-[14px] leading-snug text-[#f9f9f7]">
+        Your biggest blocker is <span class="text-[#ffd9e0] font-semibold">price uncertainty</span>. 2 items are fully purchase-ready today.
+      </p>
+</div>
+<!-- Product List Header -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-md text-[14px] font-bold text-[#1a1a1a] uppercase tracking-wide">Detailed Product Triage</span>
+<span class="font-body-md text-[14px] text-[#5a5d5e]">Sorted by Readiness</span>
+</div>
+<!-- All 6 Wishlist Items Feed -->
+<div class="flex flex-col space-y-3">
+<!-- Product Item 1: H&M Oversized Linen Blazer -->
+<article class="flex flex-col p-3 rounded-xl bg-white border border-surface-container-high/80 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<img alt="H&amp;M Oversized Linen Blazer" class="w-20 h-24 rounded-lg object-cover object-top shrink-0 bg-surface-container-high" src="https://lh3.googleusercontent.com/aida/AEtjO1WqMnSZE8azEQ2hpvWE86V0cLIFz_DfsPt2DmN5nHzNhs0xpCpP6WgvDU6DtCvkewoB7ErxxghpiJbyJCAWL9uGI-ZhrJkCprQnZGM_Y_d1ZvOOGVh1J-3TRrdqr72ODb6tJ1P_hp0eAXZWqZAbLIgqfNPfepsG2ktUoFSQsMOqc4L2WBBPrnwxArwrhUgyB8blpl37B7I9z9rxBcuMmb4dJaYuT76UcX6WCG0Ht4SETlH4tJcJTiPqcZA">
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h2 class="font-body-md text-[15px] font-bold text-[#1a1a1a] truncate">H&amp;M Oversized Linen Blazer</h2>
+</div>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-body-md text-[15px] font-bold text-[#1a1a1a]">₹2,499</span>
+<span class="font-body-md text-[14px] text-[#5a5d5e] line-through">₹3,999</span>
+<span class="font-body-md text-[14px] text-emerald-700 font-semibold">(37% off)</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-md text-[14px] text-[#5a5d5e]">Saved 23d ago</span>
+<span class="font-body-md text-[14px] text-emerald-700 font-bold">• 82% Readiness</span>
+</div>
+<div class="mt-2 flex items-center justify-end">
+<button class="bg-[#1a1a1a] text-white px-3.5 py-1.5 rounded-lg font-body-md text-[14px] font-bold hover:bg-neutral-800 transition-colors shadow-sm">
+            BUY NOW
+          </button>
+</div>
+</div>
+</div>
+<!-- Signals breakdown -->
+<div class="mt-2.5 pt-2 border-t border-surface-container flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px]">
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Price: <span class="text-emerald-700 font-semibold">Good</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span> Fit: <span class="text-amber-800 font-semibold">Relaxed</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Proof: <span class="text-emerald-700 font-semibold">63 photos</span>
+</span>
+</div>
+</article>
+<!-- Product Item 2: Levi's High Loose Wide Leg Jeans -->
+<article class="flex flex-col p-3 rounded-xl bg-white border border-surface-container-high/80 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<img alt="Levi's High Loose Wide Leg Jeans" class="w-20 h-24 rounded-lg object-cover object-center shrink-0 bg-surface-container-high" src="https://lh3.googleusercontent.com/aida/AEtjO1UdtKa5RIdwzW_E4jln4lI7HgCAMevwuadIVs5_dWw3gn7dzvj-d5x660LrLljwiwaQeSJngq9F-8V6lj4d93nAB2RKNdD-H3u3umQiOG7eIL9K4_A8wte4H__r-z-kplQBL0zf_GhBBkQ6bu6oeg83aF0xva3GV2m4HcYfWqVGHGbM-iY0AQDyU8cWWxEVW1_Q1rBPBSk6zELURX__8XGV4hyvTTWIlUvZ5I7Ghe4-wdumtQS-_R5Ynf-R">
+<div class="flex flex-col flex-1 min-w-0">
+<h2 class="font-body-md text-[15px] font-bold text-[#1a1a1a] truncate">Levi's High Loose Wide Leg Jeans</h2>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-body-md text-[15px] font-bold text-[#1a1a1a]">₹2,199</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-md text-[14px] text-[#5a5d5e]">Saved 41d ago</span>
+<span class="font-body-md text-[14px] text-amber-700 font-bold">• 61% Readiness</span>
+</div>
+<div class="mt-2 flex items-center justify-end">
+<button class="bg-amber-100 text-amber-900 border border-amber-300 px-3 py-1.5 rounded-lg font-body-md text-[14px] font-bold hover:bg-amber-200 transition-colors">
+            WAIT FOR PRICE
+          </button>
+</div>
+</div>
+</div>
+<!-- Signals breakdown -->
+<div class="mt-2.5 pt-2 border-t border-surface-container flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px]">
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-rose-500"></span> Price: <span class="text-rose-700 font-semibold">₹400 above dip</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span> Fit: <span class="text-amber-800 font-semibold">Runs long</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Proof: <span class="text-emerald-700 font-semibold">Strong</span>
+</span>
+</div>
+</article>
+<!-- Product Item 3: Mango Satin Midi Dress -->
+<article class="flex flex-col p-3 rounded-xl bg-white border border-surface-container-high/80 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<img alt="Mango Satin Midi Dress" class="w-20 h-24 rounded-lg object-cover object-top shrink-0 bg-surface-container-high" src="https://lh3.googleusercontent.com/aida/AEtjO1XxVANC4UdlDCoyNJBj47JkWFrI_5GkeNB5AUCdz721NXBARBcmw4VvpxIA31x6UsfYACK_W7Bsn1mGBZehOGg3cQP2UgZPvIMr4y9HFuI9SsVpZO1jTadKBvizUenOLveqbEqRFLIt2iaOeL257A72h1L2gXMSkB3ORj3GJM8X6eajoxl7hB2aJg1KUmkSSG8EIzmAl8OBrmQ4iVLf6w4gY5of_jMHub-pROPnTv5IdchkrCQZyKGbk33W">
+<div class="flex flex-col flex-1 min-w-0">
+<h2 class="font-body-md text-[15px] font-bold text-[#1a1a1a] truncate">Mango Satin Midi Dress</h2>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-body-md text-[15px] font-bold text-[#1a1a1a]">₹1,899</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-md text-[14px] text-[#5a5d5e]">Saved 18d ago</span>
+<span class="font-body-md text-[14px] text-rose-700 font-bold">• 48% Readiness</span>
+</div>
+<div class="mt-2 flex items-center justify-end">
+<button class="bg-rose-50 text-rose-800 border border-rose-300 px-3.5 py-1.5 rounded-lg font-body-md text-[14px] font-bold hover:bg-rose-100 transition-colors">
+            CHECK FIT
+          </button>
+</div>
+</div>
+</div>
+<!-- Signals breakdown -->
+<div class="mt-2.5 pt-2 border-t border-surface-container flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px]">
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Price: <span class="text-emerald-700 font-semibold">Fair value</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-rose-500"></span> Fit: <span class="text-rose-700 font-semibold">Chest runs tight</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span> Proof: <span class="text-amber-800 font-semibold">12 photos</span>
+</span>
+</div>
+</article>
+<!-- Product Item 4: Zara Ribbed Knit Polo Cardigan -->
+<article class="flex flex-col p-3 rounded-xl bg-white border border-surface-container-high/80 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="w-20 h-24 rounded-lg bg-[#eeeeec] flex items-center justify-center shrink-0 border border-surface-container-high">
+<span class="material-symbols-outlined text-[#747878] text-[32px]">checkroom</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<h2 class="font-body-md text-[15px] font-bold text-[#1a1a1a] truncate">Zara Ribbed Knit Polo Cardigan</h2>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-body-md text-[15px] font-bold text-[#1a1a1a]">₹1,990</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-md text-[14px] text-[#5a5d5e]">Saved 12d ago</span>
+<span class="font-body-md text-[14px] text-emerald-700 font-bold">• 85% Readiness</span>
+</div>
+<div class="mt-2 flex items-center justify-end">
+<button class="bg-[#1a1a1a] text-white px-3.5 py-1.5 rounded-lg font-body-md text-[14px] font-bold hover:bg-neutral-800 transition-colors shadow-sm">
+            BUY NOW
+          </button>
+</div>
+</div>
+</div>
+<!-- Signals breakdown -->
+<div class="mt-2.5 pt-2 border-t border-surface-container flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px]">
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Price: <span class="text-emerald-700 font-semibold">Target met</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Fit: <span class="text-emerald-700 font-semibold">True to size</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Proof: <span class="text-emerald-700 font-semibold">42 reviews</span>
+</span>
+</div>
+</article>
+<!-- Product Item 5: Massimo Dutti Pleated Wool Trousers -->
+<article class="flex flex-col p-3 rounded-xl bg-white border border-surface-container-high/80 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="w-20 h-24 rounded-lg bg-[#eeeeec] flex items-center justify-center shrink-0 border border-surface-container-high">
+<span class="material-symbols-outlined text-[#747878] text-[32px]">styler</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<h2 class="font-body-md text-[15px] font-bold text-[#1a1a1a] truncate">Massimo Dutti Pleated Wool Trousers</h2>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-body-md text-[15px] font-bold text-[#1a1a1a]">₹4,990</span>
+<span class="font-body-md text-[14px] text-[#5a5d5e] line-through">₹6,990</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-md text-[14px] text-[#5a5d5e]">Saved 30d ago</span>
+<span class="font-body-md text-[14px] text-amber-700 font-bold">• 58% Readiness</span>
+</div>
+<div class="mt-2 flex items-center justify-end">
+<button class="bg-amber-100 text-amber-900 border border-amber-300 px-3 py-1.5 rounded-lg font-body-md text-[14px] font-bold hover:bg-amber-200 transition-colors">
+            WAIT FOR PRICE
+          </button>
+</div>
+</div>
+</div>
+<!-- Signals breakdown -->
+<div class="mt-2.5 pt-2 border-t border-surface-container flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px]">
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span> Price: <span class="text-amber-800 font-semibold">₹700 above historical low</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Fit: <span class="text-emerald-700 font-semibold">Tailored fit</span>
+</span>
+</div>
+</article>
+<!-- Product Item 6: Urban Revivo Square Neck Poplin Top -->
+<article class="flex flex-col p-3 rounded-xl bg-white border border-surface-container-high/80 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="w-20 h-24 rounded-lg bg-[#eeeeec] flex items-center justify-center shrink-0 border border-surface-container-high">
+<span class="material-symbols-outlined text-[#747878] text-[32px]">apparel</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<h2 class="font-body-md text-[15px] font-bold text-[#1a1a1a] truncate">Urban Revivo Square Neck Poplin Top</h2>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-body-md text-[15px] font-bold text-[#1a1a1a]">₹1,499</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-md text-[14px] text-[#5a5d5e]">Saved 5d ago</span>
+<span class="font-body-md text-[14px] text-rose-700 font-bold">• 42% Readiness</span>
+</div>
+<div class="mt-2 flex items-center justify-end">
+<button class="bg-rose-50 text-rose-800 border border-rose-300 px-3.5 py-1.5 rounded-lg font-body-md text-[14px] font-bold hover:bg-rose-100 transition-colors">
+            CHECK FIT
+          </button>
+</div>
+</div>
+</div>
+<!-- Signals breakdown -->
+<div class="mt-2.5 pt-2 border-t border-surface-container flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px]">
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Price: <span class="text-emerald-700 font-semibold">Budget match</span>
+</span>
+<span class="flex items-center gap-1 font-body-md text-[14px] text-[#1a1a1a]">
+<span class="w-2 h-2 rounded-full bg-rose-500"></span> Fit: <span class="text-rose-700 font-semibold">Shoulder slip risk (35% buyers)</span>
+</span>
+</div>
+</article>
+</div>
+<!-- Wishlist Health Widget -->
+<section class="mt-3 p-4 rounded-xl bg-white border border-surface-container-high/80 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#e11b6c] text-[22px]">health_and_safety</span>
+<h3 class="font-body-md text-[15px] font-bold text-[#1a1a1a]">Wishlist Health</h3>
+</div>
+<span class="font-body-md text-[14px] font-bold text-[#1a1a1a] bg-surface-container-high px-2.5 py-0.5 rounded-full">68 / 100</span>
+</div>
+<p class="mt-1.5 font-body-md text-[14px] text-[#1a1a1a]">
+        Status: <span class="font-bold text-[#e11b6c]">Curated Restraint</span>
+</p>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-[#e11b6c] h-full rounded-full" style="width: 68%;"></div>
+</div>
+<p class="mt-2 font-body-md text-[14px] text-[#5a5d5e] leading-relaxed">
+        Your impulse-buying risk is low. Purchasing the 2 ready items will raise your wishlist health score to 84/100.
+      </p>
+</section>
+</main>
+<!-- Persistent iOS Bottom Nav Bar (Sticky at bottom) -->
+<nav class="sticky bottom-0 z-30 h-16 border-t border-surface-container-high/80 bg-[#fbfbf9]/95 backdrop-blur-md flex items-center justify-around px-2 shrink-0">
+<a class="flex flex-col items-center justify-center w-16 h-12 text-[#1a1a1a] hover:text-[#e11b6c] transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">home</span>
+<span class="font-body-md text-[14px] font-medium leading-none mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 h-12 text-[#1a1a1a] hover:text-[#e11b6c] transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+<span class="font-body-md text-[14px] font-medium leading-none mt-1">Wishlist</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 h-12 text-[#e11b6c] font-bold" href="#">
+<div class="w-6 h-6 rounded-full bg-[#e11b6c] flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-white">auto_awesome</span>
+</div>
+<span class="font-body-md text-[14px] text-[#e11b6c] font-bold leading-none mt-1">Copilot</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 h-12 text-[#1a1a1a] hover:text-[#e11b6c] transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="font-body-md text-[14px] font-medium leading-none mt-1">Bag</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 h-12 text-[#1a1a1a] hover:text-[#e11b6c] transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">person_outline</span>
+<span class="font-body-md text-[14px] font-medium leading-none mt-1">Profile</span>
+</a>
+</nav>
+</div>
+</body></html>
