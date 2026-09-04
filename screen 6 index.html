@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#FBFBF9",
+            "on-surface": "#1A1A1A",
+            "on-surface-variant": "#444748",
+            "surface-container-high": "#e8e8e6",
+            "surface-container": "#eeeeec",
+            "surface-container-low": "#f4f4f2",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#E11B6C",
+            "outline-variant": "#c4c7c7",
+            "primary": "#1A1A1A"
+          },
+          fontFamily: {
+            "headline-sm": ["Bodoni Moda"],
+            "body-md": ["Outfit"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    #app-root {
+      width: 390px;
+      height: 844px;
+      max-height: 844px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background-color: #FBFBF9;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+<body class="py-6">
+  <div id="app-root" class="rounded-[32px] border border-surface-container">
+    <!-- Header -->
+    <header class="shrink-0 pt-2 px-4 border-b border-surface-container bg-surface z-30">
+      <div class="h-5 flex items-center justify-between text-on-surface">
+        <span class="font-body-md text-[14px] font-semibold tracking-tight">9:41</span>
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px] leading-none">signal_cellular_4_bar</span>
+          <span class="material-symbols-outlined text-[16px] leading-none">wifi</span>
+          <span class="material-symbols-outlined text-[18px] leading-none">battery_full</span>
+        </div>
+      </div>
+      <div class="h-11 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <a class="flex items-center text-on-surface hover:text-secondary transition-colors" href="screen%203%20index.html">
+            <span class="material-symbols-outlined text-[22px]">arrow_back</span>
+          </a>
+          <span class="font-headline-sm text-[16px] font-semibold tracking-wide uppercase">Fit Intelligence</span>
+        </div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 border border-rose-200">
+          <span class="w-2 h-2 rounded-full bg-rose-600"></span>
+          <span class="font-body-md text-[13px] font-medium text-rose-700">Fit Alert</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Scrollable Content -->
+    <main class="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+      <!-- Product Header Card -->
+      <div class="bg-surface-container-lowest p-4 rounded-2xl border border-surface-container shadow-sm space-y-2">
+        <div class="flex justify-between items-center">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">Mango Casual</span>
+          <span class="px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 text-[11px] font-bold">48% READINESS</span>
+        </div>
+        <h2 class="font-headline-sm text-[18px] font-semibold text-on-surface leading-tight">Satin Midi Dress</h2>
+        <div class="flex items-baseline gap-2">
+          <span class="text-[16px] font-bold text-on-surface">₹1,899</span>
+          <span class="text-[13px] line-through text-on-surface-variant">₹3,490</span>
+          <span class="text-[11px] font-bold text-rose-600 bg-rose-50 px-1.5 py-0.5 rounded">Critical Fit Warning</span>
+        </div>
+      </div>
+
+      <!-- Warning Callout -->
+      <div class="bg-rose-50 border border-rose-200 p-3.5 rounded-2xl flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-rose-600 text-[22px] shrink-0 mt-0.5">warning</span>
+        <div>
+          <h3 class="text-[14px] font-bold text-rose-900">Chest runs tight • Moderate Return Risk</h3>
+          <p class="text-[12px] text-rose-700 mt-0.5 leading-snug">Size S has a 1.5 cm negative ease across the bust based on 84 verified customer body scans.</p>
+        </div>
+      </div>
+
+      <!-- Silhouette Calibration -->
+      <div class="bg-surface-container-lowest p-4 rounded-2xl border border-surface-container shadow-sm space-y-2.5">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-secondary">Silhouette Calibration</span>
+        <div class="grid grid-cols-3 gap-2 pt-1 text-center">
+          <div class="bg-rose-50 border border-rose-200 rounded-xl p-2.5">
+            <span class="block text-[11px] text-rose-700 font-medium uppercase">Bust</span>
+            <span class="block text-[13px] font-bold text-rose-900 mt-0.5">Tight (-1.5cm)</span>
+          </div>
+          <div class="bg-surface-container-low rounded-xl p-2.5">
+            <span class="block text-[11px] text-on-surface-variant font-medium uppercase">Waist</span>
+            <span class="block text-[13px] font-bold text-on-surface mt-0.5">Loose Drape</span>
+          </div>
+          <div class="bg-surface-container-low rounded-xl p-2.5">
+            <span class="block text-[11px] text-on-surface-variant font-medium uppercase">Hips</span>
+            <span class="block text-[13px] font-bold text-on-surface mt-0.5">Relaxed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="bg-surface-container-lowest p-4 rounded-2xl border border-surface-container shadow-sm space-y-2">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-secondary">Sizing Comparison</span>
+        <div class="overflow-hidden rounded-xl border border-surface-container mt-1">
+          <table class="w-full text-[13px] text-left">
+            <thead class="bg-surface-container-low text-on-surface-variant text-[11px] uppercase font-bold">
+              <tr>
+                <th class="py-2 px-3">Metric</th>
+                <th class="py-2 px-3 text-secondary font-bold">Your Body</th>
+                <th class="py-2 px-3 text-rose-600">Size S</th>
+                <th class="py-2 px-3 text-emerald-700">Size M</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-surface-container">
+              <tr>
+                <td class="py-2 px-3 font-medium">Bust</td>
+                <td class="py-2 px-3 font-semibold">88 cm</td>
+                <td class="py-2 px-3 font-bold text-rose-600">86.5 cm</td>
+                <td class="py-2 px-3 font-bold text-emerald-700">91 cm</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-3 font-medium">Waist</td>
+                <td class="py-2 px-3 font-semibold">70 cm</td>
+                <td class="py-2 px-3">68 cm</td>
+                <td class="py-2 px-3">72 cm</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-3 font-medium">Hips</td>
+                <td class="py-2 px-3 font-semibold">96 cm</td>
+                <td class="py-2 px-3">94 cm</td>
+                <td class="py-2 px-3">98 cm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Consensus Breakdown -->
+      <div class="bg-surface-container-lowest p-4 rounded-2xl border border-surface-container shadow-sm space-y-2">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-secondary">Reviewer Consensus</span>
+        <div class="space-y-1.5 pt-1">
+          <div class="flex justify-between text-[12px] font-medium">
+            <span>Runs Small in Bust</span>
+            <span class="font-bold text-rose-600">51%</span>
+          </div>
+          <div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+            <div class="h-full bg-rose-500 rounded-full" style="width: 51%;"></div>
+          </div>
+          <div class="flex justify-between text-[12px] font-medium pt-1">
+            <span>True to Size</span>
+            <span class="font-bold text-on-surface">42%</span>
+          </div>
+          <div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+            <div class="h-full bg-on-surface rounded-full" style="width: 42%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="space-y-2 pt-1">
+        <a href="screen%203%20index.html" style="text-decoration: none; display: block;">
+          <button class="w-full h-11 bg-primary text-white rounded-xl font-bold text-[13px] uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform" type="button">
+            <span class="material-symbols-outlined text-[17px]">straighten</span>
+            <span>Switch to Size M &amp; Recalculate</span>
+          </button>
+        </a>
+        <a href="screen%203%20index.html" class="inline-flex items-center justify-center gap-1.5 py-2 text-on-surface hover:text-secondary font-semibold text-[13px] w-full text-center">
+          <span class="material-symbols-outlined text-[17px]">arrow_back</span>
+          <span>Return to Wishlist Analysis</span>
+        </a>
+      </div>
+    </main>
+
+    <!-- Bottom Bar -->
+    <nav class="shrink-0 h-14 bg-surface/95 backdrop-blur-xl border-t border-surface-container-high px-2 flex items-center justify-around z-20">
+      <a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" href="index.html">
+        <span class="material-symbols-outlined text-[20px]">home</span>
+        <span class="text-[12px] leading-tight">Home</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" href="screen%203%20index.html">
+        <span class="material-symbols-outlined text-[20px]">favorite</span>
+        <span class="text-[12px] leading-tight">Wishlist</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-full text-secondary active:scale-95" href="screen%203%20index.html">
+        <div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center shadow-sm">
+          <span class="material-symbols-outlined text-[16px] text-white">auto_awesome</span>
+        </div>
+        <span class="text-[12px] text-secondary font-bold leading-tight mt-0.5">Copilot</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" href="#">
+        <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+        <span class="text-[12px] leading-tight">Bag</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" href="#">
+        <span class="material-symbols-outlined text-[20px]">person_outline</span>
+        <span class="text-[12px] leading-tight">Profile</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
