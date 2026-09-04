@@ -151,21 +151,38 @@
 <a aria-current="page" class="flex flex-col items-center justify-center w-14 h-full text-primary font-bold" data-path="wishlist" href="#">
 <span class="material-symbols-outlined text-[20px]">favorite</span>
 <span class="text-[14px] leading-tight">Wishlist</span>
-</a>
-<a class="flex flex-col items-center justify-center w-14 h-full text-secondary active:scale-95" data-path="copilot-ai" href="#">
-<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-[16px] text-on-secondary">auto_awesome</span>
-</div>
-<span class="text-[14px] text-secondary font-bold leading-tight mt-0.5">Copilot</span>
-</a>
-<a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="bag" href="#">
-<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
-<span class="text-[14px] leading-tight">Bag</span>
-</a>
-<a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="profile" href="#">
-<span class="material-symbols-outlined text-[20px]">person_outline</span>
-<span class="text-[14px] leading-tight">Profile</span>
-</a>
+<nav class="shrink-0 h-14 bg-surface/95 backdrop-blur-xl border-t border-surface-container-high px-2 flex items-center justify-around z-20">
+  <!-- Home Tab (Back to Screen 1) -->
+  <a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="home" href="index.html">
+    <span class="material-symbols-outlined text-[20px]">home</span>
+    <span class="text-[14px] leading-tight">Home</span>
+  </a>
+
+  <!-- Wishlist Tab (Current Screen) -->
+  <a aria-current="page" class="flex flex-col items-center justify-center w-14 h-full text-primary font-bold" data-path="wishlist" href="#">
+    <span class="material-symbols-outlined text-[20px]">favorite</span>
+    <span class="text-[14px] leading-tight">Wishlist</span>
+  </a>
+
+  <!-- Copilot Tab (Advances to Screen 3) -->
+  <a class="flex flex-col items-center justify-center w-14 h-full text-secondary active:scale-95" data-path="copilot-ai" href="screen%203%20index.html">
+    <div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center shadow-sm">
+      <span class="material-symbols-outlined text-[16px] text-on-secondary">auto_awesome</span>
+    </div>
+    <span class="text-[14px] text-secondary font-bold leading-tight mt-0.5">Copilot</span>
+  </a>
+
+  <!-- Bag Tab -->
+  <a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="bag" href="#">
+    <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+    <span class="text-[14px] leading-tight">Bag</span>
+  </a>
+
+  <!-- Profile Tab -->
+  <a class="flex flex-col items-center justify-center w-14 h-full text-on-surface-variant hover:text-on-surface" data-path="profile" href="#">
+    <span class="material-symbols-outlined text-[20px]">person_outline</span>
+    <span class="text-[14px] leading-tight">Profile</span>
+  </a>
 </nav>
 </div>
 <script>
