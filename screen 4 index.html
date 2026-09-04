@@ -12,10 +12,12 @@
 </div>
 </div>
 <div class="h-10 flex items-center justify-between mt-1">
-<button aria-label="Back to Wishlist" class="flex items-center gap-1.5 text-on-surface hover:text-secondary active:scale-95 transition-all py-1 -ml-1 cursor-pointer" id="backToWishlistBtn" onclick="navigateBack()">
-<span class="material-symbols-outlined text-[20px]">arrow_back</span>
-<span class="font-body-md text-[13px] font-bold uppercase tracking-wider">Back to Wishlist</span>
-</button>
+<a href="screen%203%20index.html" style="text-decoration: none; display: inline-flex;">
+  <button aria-label="Back to Wishlist" class="flex items-center gap-1.5 text-on-surface hover:text-secondary active:scale-95 transition-all py-1 -ml-1 cursor-pointer" id="backToWishlistBtn" type="button">
+    <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+    <span class="font-body-md text-[13px] font-bold uppercase tracking-wider">Back to Wishlist</span>
+  </button>
+</a>
 <span class="font-headline-sm text-[14px] font-semibold uppercase tracking-wider text-on-surface">Item Intelligence</span>
 <div class="flex items-center gap-2">
 <button aria-label="Share" class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface hover:text-secondary transition-colors">
@@ -266,10 +268,12 @@ Verified Stylist
 <button aria-label="Set Target Alert" class="h-12 w-12 rounded-xl bg-white flex items-center justify-center text-on-surface hover:bg-stone-50 active:scale-95 transition-all shrink-0 border border-stone-300 cursor-pointer shadow-sm" id="alertBtn">
 <span class="material-symbols-outlined text-[22px]" id="alertIcon">notifications</span>
 </button>
-<button class="flex-1 h-12 px-4 rounded-xl bg-[#E11B6C] text-white font-body-md text-[14px] uppercase tracking-wider font-bold shadow-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all hover:bg-[#c9155f] cursor-pointer" id="ctaBtn" onclick="navigateToConfirmation()">
-<span class="">VIEW ON MYNTRA</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
+<a href="screen%205%20index.html" style="text-decoration: none; display: flex; flex: 1;">
+  <button class="w-full h-12 px-4 rounded-xl bg-[#E11B6C] text-white font-body-md text-[14px] uppercase tracking-wider font-bold shadow-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all hover:bg-[#c9155f] cursor-pointer" id="ctaBtn" type="button">
+    <span class="">VIEW ON MYNTRA</span>
+    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+  </button>
+</a>
 </div>
 <!-- Alert Toast Notification (Subtle confirmation) -->
 <div class="hidden mt-2 p-2.5 rounded-lg bg-stone-900 text-white text-[13px] flex items-center justify-between transition-all" id="alertToast">
